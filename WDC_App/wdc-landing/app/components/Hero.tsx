@@ -1,22 +1,19 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useState } from "react";
 
 export default function Hero() {
-  const counterRef = useRef<HTMLSpanElement>(null);
+  const [count, setCount] = useState(0);
 
-  // Animated counter for a stat
   useEffect(() => {
-    const el = counterRef.current;
-    if (!el) return;
     let start = 0;
     const end = 150;
     const duration = 1800;
-    const step = Math.ceil(duration / end);
+    const stepTime = Math.ceil(duration / end);
     const timer = setInterval(() => {
       start += 1;
-      el.textContent = start + "+";
+      setCount(start);
       if (start >= end) clearInterval(timer);
-    }, step);
+    }, stepTime);
     return () => clearInterval(timer);
   }, []);
 
@@ -225,7 +222,7 @@ export default function Hero() {
                   marginBottom: "0.4rem",
                 }}
               >
-                {stat.counter ? <span ref={counterRef}>0+</span> : stat.value}
+                {stat.value}
               </div>
               <div
                 style={{

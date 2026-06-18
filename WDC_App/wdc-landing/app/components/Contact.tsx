@@ -62,7 +62,7 @@ export default function Contact() {
         }}
       />
 
-      <div
+      <div 
         style={{
           maxWidth: 900,
           margin: "0 auto",
