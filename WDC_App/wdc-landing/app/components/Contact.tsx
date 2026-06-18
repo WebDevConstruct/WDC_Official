@@ -117,7 +117,7 @@ export default function Contact() {
 
           <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
             {[
-              { label: "Email", value: "webdevconstruct249@gmail..com" },
+              { label: "Email", value: "webdevconstruct249@gmail.com" },
               { label: "Based In", value: "Lagos, Nigeria · Remote-Ready" },
               { label: "Response Time", value: "Within 24 hours" },
             ].map((item) => (
