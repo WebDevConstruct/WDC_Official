@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# WDC_Official
-This is WebDevConstruct official repository for the webDevConstruct website
-=======
 # WDC — WebDevConstruct Landing Page
 
 > A Next.js landing page for WebDevConstruct (WDC), a technology consultancy that builds custom business applications for enterprises and growing companies.
@@ -143,4 +139,3 @@ Update the CSS custom properties in `globals.css` under `:root`. All components 
 ---
 
 *WebDevConstruct — Built for Real Results.*
->>>>>>> 5fb721c (Added SubStack embed tags)
