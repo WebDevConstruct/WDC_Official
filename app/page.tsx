@@ -6,7 +6,7 @@ import Industries from "./components/Industries";
 import Insights from "./components/Insights";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
+import Newsletter from "./components/Newsletter";
 export default function Home() {
   return (
     <>
@@ -17,6 +17,7 @@ export default function Home() {
         <Approach />
         <Industries />
         <Insights />
+        <Newsletter/>
         <Contact />
       </main>
       <Footer />
